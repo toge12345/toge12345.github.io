@@ -4,13 +4,186 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>About</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- カスタマイズ用CSS -->
+    <link rel="stylesheet" href="mycss.css"/>
+
+    <style>
+      body {
+        font-size:14px;
+        font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+      }
+      .container-fluid {
+       border: 2px #708090 solid;
+      }
+      .navbar {
+        border-radius:0px;
+
+      } 
+      .navbar-collapse {
+        padding:5px 10px 10px 10px;
+      }
+
+
+      .nav-pills {
+        font-size:12px;
+      }
+      .container h1 {
+        font-size:20px;
+        padding:0px 0px 0px 10px;
+      }
+      .container h2 {
+       font-size:16px;
+       font-weight: 900; 
+      }
+      .container h3{
+        font-size:14px;
+        font-weight: 700; 
+        padding-left: 10px ;
+      }
+      .container p {
+        padding-left: 10px;
+      }
+      .block {
+        padding:5px 5px 5px 5px;
+        border: 2px #708090 solid;
+        border-radius: 10px;
+          -webkit-transition: border .2s ease-in-out;
+           -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+      }
+      .block p {
+        word-break: break-all;
+        display: block;
+        padding: 5px 5px 10px 10px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        font-size:14px;
+      }
+
+      footer {
+        border-top: 1px solid#e7e7e7;
+        background-color: #f8f8f8;
+      	width:100%;               /* 横の幅を100% */
+	      height: 40px;            /* 縦の幅を120px */
+      	position: fixed;       /* 絶対位置指定することを定義 */
+      	bottom: 0px;              /* 絶対位置指定(左0px,下0px) */
+      }
+      .copyright{
+        padding:10px 0;
+        font-size:12px;
+        color:#f5f5f5;
+        background-color:#708090;
+        text-align:right;
+      }
+      @media (max-width:768px){
+        body{
+          font-size:12px;
+        }
+        
+        h1{
+          font-size:30px;
+        }
+        
+        h2{
+          font-size:24px;
+        }  
+       .panel-titloe{
+         font-size:14px;
+       }
+        
+      }
+
+    </style>
+ 
+  </head>
+
+  <body>
+    <header>
+
+        <div class="container-fluid">
+          <div class-"navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class-"icon-bar"></span>
+              <span class-"icon-bar"></span>
+              <span class-"icon-bar"></span>
+            </button> 
+            <a class="navbar-brand" href="#">Obake.Company</a>
+          </div>
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav nav-pills navbar-right">
+              <li role="presentation"><a href="#">top</a></li>
+              <li role="presentation" class="active"><a href="#">About</a></li>
+              <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <div class=container>
+      <h1>About</h1>
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#">
+            <img class="media-object" src="kari_prof.jpg" alt="...">
+          </a>
+        </div>
+        <div class="media-body">
+          <h2 class="media-heading">Profile</h2>
+          <p>しみずです。最近のブームは大福パンです。パンの中に丸ごと入っており、すでに大福でもパンでもない食べ物となってます。</p>
+          <p>パンと大福の境目が融合して独特のモチモチ感にはまってます。</p>
+          <p>あんぱんはともかく、<a href="https://github.com/toge12345">GitHubアカウントページ</a>でアプリを確認できます。</p>
+        </div>
+      </div>  
+      <h1>Apli</h1>
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <div class="block">
+              <a href="#" class="thumbnail">
+                <img src="8.png" alt="...">
+              </a>
+              <h2>OBAKE App</h2>
+              <p>1つ目のアプリケーションはお化けです</p>
+            </div>  
+          </div>
+          
+          <div class="col-xs-6 col-md-3">
+            <div class="block">
+              <a href="#" class="thumbnail">
+                <img src="8.png" alt="...">
+              </a>
+              <h2>HITODAMA App</h2>
+              <p>2つ目のアプリケーションはお化けです</p>
+            </div>  
+          </div>
+          
+          <div class="col-xs-6 col-md-3">
+            <div class="block">
+              <a href="#" class="thumbnail">
+                <img src="8.png" alt="...">
+              </a>
+              <h2>HONOO App</h2>
+              <p>3つ目のアプリケーションはお化けです</p>
+            </div>  
+          </div>
+          
+          <div class="col-xs-6 col-md-3">
+            <div class="block">
+              <a href="#" class="thumbnail">
+                <img src="8.png" alt="...">
+              </a>
+              <h2>URAMESIYA App</h2>
+              <p>4つ目のアプリケーションもお化けです</p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <footer>
+    <div class="copyright">@obake.work.</div>
+  </footer>
 </html>

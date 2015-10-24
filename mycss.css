@@ -1,0 +1,18 @@
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #708090;
+}
+.container h1 {
+    padding-bottom: 5px;
+    border-left: 5px solid #708090;
+    border-bottom: 1px dashed #708090;
+}
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 10px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
