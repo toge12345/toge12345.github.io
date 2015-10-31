@@ -18,6 +18,10 @@
       }
       .container-fluid {
        border: 2px #708090 solid;
+       border-radius:5px 5px 5px 5px;
+        -webkit-transition: border .2s ease-in-out;
+        -o-transition: border .2s ease-in-out;
+        transition: border .2s ease-in-out;
       }
       .navbar {
         border-radius:0px;
@@ -26,7 +30,15 @@
       .navbar-collapse {
         padding:5px 10px 10px 10px;
       }
+      .navbar-brand{
+        margin-top:0px;
+      }
+      .navbar-brand img {
+        position: relative; top: -5px;
+        padding-right:5px;
+        float:left;
 
+      }
 
       .nav-pills {
         font-size:12px;
@@ -47,8 +59,12 @@
       .container p {
         padding-left: 10px;
       }
+      .media-body P{
+        line-height:18px;
+      }
       .block {
         padding:5px 5px 5px 5px;
+        margin-bottom:10px;
         border: 2px #708090 solid;
         border-radius: 10px;
           -webkit-transition: border .2s ease-in-out;
@@ -58,28 +74,34 @@
       .block p {
         word-break: break-all;
         display: block;
-        padding: 5px 5px 10px 10px;
-        margin-bottom: 10px;
+        padding: 5px 5px 5px 5px;
+       
         background-color: #fff;
         font-size:14px;
       }
 
       footer {
-        border-top: 1px solid#e7e7e7;
         background-color: #f8f8f8;
       	width:100%;               /* 横の幅を100% */
 	      height: 40px;            /* 縦の幅を120px */
-      	position: fixed;       /* 絶対位置指定することを定義 */
+
       	bottom: 0px;              /* 絶対位置指定(左0px,下0px) */
+      	position: fixed;
       }
       .copyright{
-        padding:10px 0;
+        padding:10px;
         font-size:12px;
         color:#f5f5f5;
         background-color:#708090;
         text-align:right;
+        
+        border-radius:5px 5px 5px 5px;
+          -webkit-transition: border .2s ease-in-out;
+           -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
       }
-      @media (max-width:768px){
+      
+       @media (max-width:768px){
         body{
           font-size:12px;
         }
@@ -91,6 +113,9 @@
         h2{
           font-size:24px;
         }  
+        p{
+
+        }
        .panel-titloe{
          font-size:14px;
        }
@@ -103,16 +128,16 @@
 
   <body>
     <header>
-
+      <nav class="navbar navbar-default">
         <div class="container-fluid">
-          <div class-"navbar-header">
+          <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-menu">
               <span class="sr-only">Toggle navigation</span>
-              <span class-"icon-bar"></span>
-              <span class-"icon-bar"></span>
-              <span class-"icon-bar"></span>
-            </button> 
-            <a class="navbar-brand" href="#">Obake.Company</a>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="icon4.png" >Obake.Company</a>
           </div>
           <div class="collapse navbar-collapse" id="site-menu">
             <ul class="nav nav-pills navbar-right">
@@ -122,68 +147,71 @@
             </ul>
           </div>
         </div>
+      </nav>  
     </header>
     <div class=container>
       <h1>About</h1>
       <div class="media">
         <div class="media-left media-middle">
-          <a href="#">
-            <img class="media-object" src="kari_prof.jpg" alt="...">
-          </a>
+           <img class="media-object" src="kari_prof.jpg" >
         </div>
         <div class="media-body">
           <h2 class="media-heading">Profile</h2>
-          <p>しみずです。最近のブームは大福パンです。パンの中に丸ごと入っており、すでに大福でもパンでもない食べ物となってます。</p>
-          <p>パンと大福の境目が融合して独特のモチモチ感にはまってます。</p>
-          <p>あんぱんはともかく、<a href="https://github.com/toge12345">GitHubアカウントページ</a>でアプリを確認できます。</p>
+          <p>しみずです。最近のブームは大福パンです。<br/>
+          パンの中に丸ごと大福が入っており、パンと大福があわさることにより大福でもパンでもない食べ物となってます。<br/>
+          おそらく、小麦粉ともち米がオーブンで焼かれることにより溶け合い不思議かつ独特なもちもちとした食感となっています。<br/>
+          しかし割に高いのです。250円くらいします。大福もパンもいっぺんに食べたい欲張りさ、横着さ、かつおいしさを3重にも求めるということの価格なのでしょう。<br/>
+          あんぱんはともかく、<a href="https://github.com/toge12345">GitHubアカウントページ</a>でアプリを確認できます。</p>
         </div>
       </div>  
-      <h1>Apli</h1>
-        <div class="row">
-          <div class="col-xs-6 col-md-3">
-            <div class="block">
-              <a href="#" class="thumbnail">
-                <img src="8.png" alt="...">
-              </a>
-              <h2>OBAKE App</h2>
-              <p>1つ目のアプリケーションはお化けです</p>
-            </div>  
-          </div>
-          
-          <div class="col-xs-6 col-md-3">
-            <div class="block">
-              <a href="#" class="thumbnail">
-                <img src="8.png" alt="...">
-              </a>
-              <h2>HITODAMA App</h2>
-              <p>2つ目のアプリケーションはお化けです</p>
-            </div>  
-          </div>
-          
-          <div class="col-xs-6 col-md-3">
-            <div class="block">
-              <a href="#" class="thumbnail">
-                <img src="8.png" alt="...">
-              </a>
-              <h2>HONOO App</h2>
-              <p>3つ目のアプリケーションはお化けです</p>
-            </div>  
-          </div>
-          
-          <div class="col-xs-6 col-md-3">
-            <div class="block">
-              <a href="#" class="thumbnail">
-                <img src="8.png" alt="...">
-              </a>
-              <h2>URAMESIYA App</h2>
-              <p>4つ目のアプリケーションもお化けです</p>
-            </div>  
-          </div>
+      <h1>Application</h1>
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <div class="block">
+            <a href="#" class="thumbnail">
+              <img src="1.png" alt="...">
+            </a>
+            <h2>OBAKE App</h2>
+            <p>1つ目のアプリケーションはお化けです</p>
+          </div>  
+        </div>
+        
+        <div class="col-xs-6 col-md-3">
+          <div class="block">
+            <a href="#" class="thumbnail">
+              <img src="2.png" alt="...">
+            </a>
+            <h2>HONOO App</h2>
+            <p>2つ目のアプリケーションはお化けです</p>
+          </div>  
+        </div>
+        
+        <div class="col-xs-6 col-md-3">
+          <div class="block">
+            <a href="#" class="thumbnail">
+              <img src="3.png" alt="...">
+            </a>
+            <h2>HITODAMA App</h2>
+            <p>3つ目のアプリケーションはお化けです</p>
+          </div>  
+        </div>
+        
+        <div class="col-xs-6 col-md-3">
+          <div class="block">
+            <a href="#" class="thumbnail">
+              <img src="4.png" alt="...">
+            </a>
+            <h2>URAMESIYA App</h2>
+            <p>4つ目のアプリケーションもお化けです</p>
+          </div>  
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div class="copyright">@obake.work.</div>
+    </footer>
   </body>
-  <footer>
-    <div class="copyright">@obake.work.</div>
-  </footer>
 </html>
